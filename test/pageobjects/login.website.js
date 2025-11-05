@@ -18,5 +18,8 @@ class LoginPage extends Website {
     open(){
         return super.open('login');
     }
+    get negaValidation(){
+	    return $('h3[data-test=error]');
+    }
 }
 export default new LoginPage();
